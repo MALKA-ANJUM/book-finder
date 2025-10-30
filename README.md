@@ -1,15 +1,17 @@
 📚 Book Finder – React.js App
+--
 
 A simple and responsive Book Finder web app built using React.js and plain CSS, that allows users to search for books by title using the Open Library API
---
 
 
 🚀 Demo
+--
 ```bash
 https://7jf28v-5173.csb.app/
 ```
 
 🧠 Features
+--
 
 🔍 Search books by title
 
@@ -24,6 +26,7 @@ https://7jf28v-5173.csb.app/
 🎨 Clean, responsive UI using plain CSS
 
 Tech Stack
+--
 
 Frontend: React.js
 
@@ -32,6 +35,7 @@ Styling: Plain CSS
 API: Open Library Search API
 
 ⚙️ Installation & Setup
+--
 
 Follow these steps to run the project locally 👇
 ```bash
@@ -49,6 +53,7 @@ npm start
 ```
 
 API Reference
+--
 
 Base URL:
 ```bash
@@ -56,6 +61,7 @@ https://openlibrary.org/search.json?title={bookTitle}&page={pageNumber}
 ```
 
 🧑‍💻 Author
+--
 Malka Anjum
 Full Stack Developer (React.js | Laravel | PHP | MySQL)
 
