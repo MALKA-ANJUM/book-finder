@@ -1,26 +1,24 @@
 import React from "react";
 import BookCard from "./BookCard";
 
-export default function BookList({
-    books,
-    loading,
-    favorites,
-    onToggleFavorite,
-}) {
-    if (loading) return <div className="empty-state">Loading…</div>;
-    if (!books || books.length === 0)
-        return <div className="empty-state">No results — try another title.</div>;
+function BookList({ books }) {
+  if (!books.length) {
+    return <p className="no-books">No books found. Try searching something!</p>;
+  }
 
-    return (
-        <div className="book-grid">
-        {books.map((book) => (
-            <BookCard
-            key={book.key}
-            book={book}
-            isFav={favorites.includes(book.key)}
-            onToggle={() => onToggleFavorite(book.key)}
-            />
-        ))}
-        </div>
-    );
+  return (
+    <div className="book-list">
+      {books.map((book, index) => (
+        <BookCard
+          key={index}
+          title={book.title}
+          author={book.author_name ? book.author_name.join(", ") : "Unknown Author"}
+          year={book.first_publish_year || "N/A"}
+          coverId={book.cover_i}
+        />
+      ))}
+    </div>
+  );
 }
+
+export default BookList;
