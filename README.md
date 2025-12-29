@@ -63,5 +63,5 @@ https://openlibrary.org/search.json?title={bookTitle}&page={pageNumber}
 🧑‍💻 Author
 --
 Malka Anjum
-Full Stack Developer (React.js | Laravel | PHP | MySQL)
+Full Stack Developer (React.js | Laravel  | MySQL)
 
